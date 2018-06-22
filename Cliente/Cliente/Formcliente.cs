@@ -15,13 +15,13 @@ using System.Windows.Forms;
 
 namespace Cliente
 {
-    public partial class Cliente : Form
+    public partial class Formcliente : Form
     {
         private const int PORT = 10000;
         NetworkStream networkStream;
         ProtocolSI protocolSI;
         TcpClient client;
-        public Cliente()
+        public Formcliente()
         {
             InitializeComponent();
             IPEndPoint endpoint = new IPEndPoint(IPAddress.Loopback, PORT);
@@ -80,10 +80,9 @@ namespace Cliente
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void openFileDialog1_FileOk(object sender, CancelEventArgs e)
         {
-            Formautenticacao interligar = new Formautenticacao();
-            interligar.ShowDialog();
+
         }
     }
 }

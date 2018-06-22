@@ -21,6 +21,21 @@ namespace Pagina_Inicial
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
+  
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbInicial_Click(object sender, EventArgs e)
+        {
+        
+        }
+
+        private void btnSeguir_Click(object sender, EventArgs e)
+        {
             Formlogin interligar = new Formlogin();
             interligar.ShowDialog();
         }

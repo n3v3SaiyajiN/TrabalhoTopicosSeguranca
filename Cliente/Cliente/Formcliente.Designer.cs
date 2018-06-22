@@ -1,6 +1,6 @@
 ﻿namespace Cliente
 {
-    partial class Cliente
+    partial class Formcliente
     {
         /// <summary>
         /// Required designer variable.
@@ -34,7 +34,7 @@
             this.btnSair = new System.Windows.Forms.Button();
             this.btnEnviarficheiro = new System.Windows.Forms.Button();
             this.OFD1 = new System.Windows.Forms.OpenFileDialog();
-            this.button1 = new System.Windows.Forms.Button();
+            this.openFileDialog2 = new System.Windows.Forms.OpenFileDialog();
             this.SuspendLayout();
             // 
             // lbEnviarmensagem
@@ -87,32 +87,25 @@
             // 
             // OFD1
             // 
-            this.OFD1.FileName = "OFD1";
-            this.OFD1.FileOk += new System.ComponentModel.CancelEventHandler(this.OFD1_FileOk);
+            this.OFD1.FileName = "openFileDialog1";
+            this.OFD1.FileOk += new System.ComponentModel.CancelEventHandler(this.openFileDialog1_FileOk);
             // 
-            // button1
+            // openFileDialog2
             // 
-            this.button1.Location = new System.Drawing.Point(289, 34);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.openFileDialog2.FileName = "openFileDialog2";
             // 
-            // Cliente
+            // Formcliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(668, 325);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.btnEnviarficheiro);
             this.Controls.Add(this.btnSair);
             this.Controls.Add(this.btnEnviarMensagem);
             this.Controls.Add(this.tbEnviarmensagem);
             this.Controls.Add(this.lbEnviarmensagem);
-            this.Name = "Cliente";
-            this.Text = "Form1";
+            this.Name = "Formcliente";
+            this.Text = "Formcliente";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -126,7 +119,7 @@
         private System.Windows.Forms.Button btnSair;
         private System.Windows.Forms.Button btnEnviarficheiro;
         private System.Windows.Forms.OpenFileDialog OFD1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.OpenFileDialog openFileDialog2;
     }
 }
 

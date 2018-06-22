@@ -19,6 +19,12 @@
             }
             base.Dispose(disposing);
         }
-        private System.Windows.Forms.Label lbautenticacao;
+        private System.Windows.Forms.TextBox tbusername;
+        private System.Windows.Forms.TextBox tbpassword;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label lbusername;
+        private System.Windows.Forms.Button btnlogin;
+        private System.Windows.Forms.Label lbregistro;
+        private System.Windows.Forms.Label lbpassword;
     }
 }
