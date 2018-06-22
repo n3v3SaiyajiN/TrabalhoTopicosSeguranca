@@ -48,16 +48,43 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Formpaginaprincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formpaginaprincipal.Designer.cs">
+      <DependentUpon>Formpaginaprincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formautenticação.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formautenticação.Designer.cs">
+      <DependentUpon>Formautenticação.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formcliente.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Formcliente.Designer.cs">
       <DependentUpon>Formcliente.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formlogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlogin.Designer.cs">
+      <DependentUpon>Formlogin.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Formpaginaprincipal.resx">
+      <DependentUpon>Formpaginaprincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formautenticação.resx">
+      <DependentUpon>Formautenticação.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formcliente.resx">
       <DependentUpon>Formcliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlogin.resx">
+      <DependentUpon>Formlogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
