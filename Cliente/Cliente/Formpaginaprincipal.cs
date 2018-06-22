@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Pagina_Registo;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -19,7 +20,7 @@ namespace Pagina_Inicial
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-             interligar = new ();
+            Autenticação interligar = new Autenticação();
             interligar.ShowDialog();
         }
     }
