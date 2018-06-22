@@ -1,4 +1,5 @@
 ﻿using EI.SI;
+using Pagina_Registo;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -77,6 +78,12 @@ namespace Cliente
         private void OFD1_FileOk(object sender, CancelEventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Formautenticacao interligar = new Formautenticacao();
+            interligar.ShowDialog();
         }
     }
 }

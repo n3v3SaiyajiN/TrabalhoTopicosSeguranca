@@ -30,10 +30,9 @@
         {
             this.lbUsername = new System.Windows.Forms.Label();
             this.lbPass = new System.Windows.Forms.Label();
-            this.lbConfirmpass = new System.Windows.Forms.Label();
             this.tbUser = new System.Windows.Forms.TextBox();
             this.tbPass = new System.Windows.Forms.TextBox();
-            this.tbPassconfirm = new System.Windows.Forms.TextBox();
+            this.btn_iniciar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lbUsername
@@ -54,21 +53,13 @@
             this.lbPass.TabIndex = 1;
             this.lbPass.Text = "Password:";
             // 
-            // lbConfirmpass
-            // 
-            this.lbConfirmpass.AutoSize = true;
-            this.lbConfirmpass.Location = new System.Drawing.Point(53, 245);
-            this.lbConfirmpass.Name = "lbConfirmpass";
-            this.lbConfirmpass.Size = new System.Drawing.Size(94, 13);
-            this.lbConfirmpass.TabIndex = 2;
-            this.lbConfirmpass.Text = "Confirm Password:";
-            // 
             // tbUser
             // 
             this.tbUser.Location = new System.Drawing.Point(167, 153);
             this.tbUser.Name = "tbUser";
             this.tbUser.Size = new System.Drawing.Size(336, 20);
             this.tbUser.TabIndex = 3;
+            this.tbUser.TextChanged += new System.EventHandler(this.tbUser_TextChanged);
             // 
             // tbPass
             // 
@@ -77,23 +68,23 @@
             this.tbPass.Size = new System.Drawing.Size(336, 20);
             this.tbPass.TabIndex = 4;
             // 
-            // tbPassconfirm
+            // btn_iniciar
             // 
-            this.tbPassconfirm.Location = new System.Drawing.Point(167, 242);
-            this.tbPassconfirm.Name = "tbPassconfirm";
-            this.tbPassconfirm.Size = new System.Drawing.Size(336, 20);
-            this.tbPassconfirm.TabIndex = 5;
-            this.tbPassconfirm.TextChanged += new System.EventHandler(this.tbPassconfirm_TextChanged);
+            this.btn_iniciar.Location = new System.Drawing.Point(428, 265);
+            this.btn_iniciar.Name = "btn_iniciar";
+            this.btn_iniciar.Size = new System.Drawing.Size(75, 23);
+            this.btn_iniciar.TabIndex = 5;
+            this.btn_iniciar.Text = "Iniciar Sessão";
+            this.btn_iniciar.UseVisualStyleBackColor = true;
             // 
             // Formautenticacao
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(670, 329);
-            this.Controls.Add(this.tbPassconfirm);
+            this.Controls.Add(this.btn_iniciar);
             this.Controls.Add(this.tbPass);
             this.Controls.Add(this.tbUser);
-            this.Controls.Add(this.lbConfirmpass);
             this.Controls.Add(this.lbPass);
             this.Controls.Add(this.lbUsername);
             this.Name = "Formautenticacao";
@@ -107,10 +98,9 @@
 
         private System.Windows.Forms.Label lbUsername;
         private System.Windows.Forms.Label lbPass;
-        private System.Windows.Forms.Label lbConfirmpass;
         private System.Windows.Forms.TextBox tbUser;
         private System.Windows.Forms.TextBox tbPass;
-        private System.Windows.Forms.TextBox tbPassconfirm;
+        private System.Windows.Forms.Button btn_iniciar;
     }
 }
 
