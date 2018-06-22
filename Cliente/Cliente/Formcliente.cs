@@ -73,5 +73,10 @@ namespace Cliente
                 networkStream.Read(protocolSI.Buffer, 0, protocolSI.Buffer.Length);
             }
         }
+
+        private void OFD1_FileOk(object sender, CancelEventArgs e)
+        {
+
+        }
     }
 }

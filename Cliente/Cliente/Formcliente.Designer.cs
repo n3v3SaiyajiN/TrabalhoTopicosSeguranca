@@ -87,6 +87,7 @@
             // OFD1
             // 
             this.OFD1.FileName = "OFD1";
+            this.OFD1.FileOk += new System.ComponentModel.CancelEventHandler(this.OFD1_FileOk);
             // 
             // Cliente
             // 

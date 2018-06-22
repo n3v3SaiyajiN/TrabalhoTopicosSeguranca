@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Pagina_Registo
 {
-    public partial class Autenticação : Form
+    public partial class Formautenticacao : Form
     {
-        public Autenticação()
+        public Formautenticacao()
         {
             InitializeComponent();
         }

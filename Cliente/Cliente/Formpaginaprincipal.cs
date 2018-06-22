@@ -1,4 +1,5 @@
-﻿using Pagina_Registo;
+﻿using Pagina_Login;
+using Pagina_Registo;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -11,16 +12,16 @@ using System.Windows.Forms;
 
 namespace Pagina_Inicial
 {
-    public partial class Form1 : Form
+    public partial class Formpaginaprincipal : Form
     {
-        public Form1()
+        public Formpaginaprincipal()
         {
             InitializeComponent();
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            Autenticação interligar = new Autenticação();
+            Formlogin interligar = new Formlogin();
             interligar.ShowDialog();
         }
     }

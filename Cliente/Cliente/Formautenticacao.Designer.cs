@@ -1,6 +1,6 @@
 ﻿namespace Pagina_Registo
 {
-    partial class Autenticação
+    partial class Formautenticacao
     {
         /// <summary>
         /// Required designer variable.
@@ -85,7 +85,7 @@
             this.tbPassconfirm.TabIndex = 5;
             this.tbPassconfirm.TextChanged += new System.EventHandler(this.tbPassconfirm_TextChanged);
             // 
-            // Autenticação
+            // Formautenticacao
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -96,8 +96,8 @@
             this.Controls.Add(this.lbConfirmpass);
             this.Controls.Add(this.lbPass);
             this.Controls.Add(this.lbUsername);
-            this.Name = "Autenticação";
-            this.Text = "Autenticação";
+            this.Name = "Formautenticacao";
+            this.Text = "Formautenticacao";
             this.ResumeLayout(false);
             this.PerformLayout();
 
